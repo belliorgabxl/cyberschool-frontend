@@ -7,7 +7,7 @@ export default function NavBar() {
   const navData = NavBarData;
   return (
     <div className="w-full fixed flex z-50 bg-white item-center top-0 right-0 left-0 h-20 px-5 border-b-1  border-gray-200">
-      <div className="grid grid-cols-[40%_60%] w-full">
+      <div className="grid grid-cols-[35%_65%] w-full">
         <Link href={"/"} className="px-10 flex gap-5 items-center">
           <span className="bg-blue-900 rounded-full px-3 py-3 grid place-items-center ">
             <LockKeyhole className="w-8 h-8  text-white" />

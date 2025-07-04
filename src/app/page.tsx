@@ -6,23 +6,9 @@ import { File, Joystick, PlayIcon, Puzzle } from "lucide-react";
 export default function Home() {
   return (
     <div className="bg-blue-100 lg:px-10 pb-20">
-      {/* <div className="grid w-full place-items-center my-20">
-        <HeaderHomePage/>
-      </div> */}
       <div className="py-5 ">
         <BannerHomePage />
       </div>
-      {/* <div className="grid grid-cols-3 gap-4 py-5">
-        {topics.map((d) => (
-          <TopicCard
-            key={d.amount}
-            topic={d.topic}
-            description={d.description}
-            icon={d.icon}
-            amount={d.amount}
-          />
-        ))}
-      </div> */}
       <div className="flex gap-10 mb-5">
         <SuggestCard
           topic="แนะนำสำหรับครู"

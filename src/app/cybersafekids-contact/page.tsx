@@ -6,7 +6,7 @@ export default function page() {
       <div className="w-full flex py-4 justify-center items-center">
         <div className="px-10 text-center bg-white rounded-2xl py-10">
           <h1 className="text-4xl text-blue-900 font-extrabold">
-            ความรู้สำหรับครูผู้สอน
+            ข้อมูลการติดต่อ
           </h1>
         </div>
       </div>

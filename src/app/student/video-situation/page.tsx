@@ -4,7 +4,7 @@ import { TopicData } from "@/resource/TopicData";
 import React from "react";
 
 const data = TopicData;
-
+// get all student topic
 export default function page() {
   const topics = data;
   return (

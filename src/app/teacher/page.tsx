@@ -1,14 +1,11 @@
+import Headers from "@/components/common/Headers";
 import React from "react";
 
 export default function page() {
   return (
     <div className="py-5 px-10 bg-blue-100">
       <div className="w-full flex py-4 justify-center items-center">
-        <div className="px-10 text-center bg-white rounded-2xl py-10">
-          <h1 className="text-4xl text-blue-900 font-extrabold">
-            ความรู้สำหรับครูผู้สอน
-          </h1>
-        </div>
+        <Headers header="ความรู้สำหรับครูผู้สอน" />
       </div>
     </div>
   );

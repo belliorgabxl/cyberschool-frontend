@@ -34,15 +34,35 @@ body {
 
 @font-face {
   font-family: 'Prompt';
-  src: url('/font/Prompt/Prompt-Medium.ttf') format('truetype');
+  src: url('/font/Prompt/Prompt-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Prompt';
+  src: url('/font/Prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: 'Prompt-Light';
-  src: url('/font/Prompt/Prompt-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: 'Prompt';
+  src: url('/font/Prompt/Prompt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('/font/Prompt/Prompt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prompt';
+  src: url('/font/Prompt/Prompt-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }

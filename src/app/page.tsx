@@ -1,6 +1,6 @@
 import BannerHomePage from "@/components/common/Banner";
 import NewsCard from "@/components/common/NewsCard";
-import SuggestCard from "@/components/common/SuggestCard";
+import RecommendCard from "@/components/common/SuggestCard";
 import { File, Joystick, PlayIcon, Puzzle } from "lucide-react";
 
 export default function Home() {
@@ -10,7 +10,8 @@ export default function Home() {
         <BannerHomePage />
       </div>
       <div className="flex gap-10 mb-5">
-        <SuggestCard
+        <RecommendCard
+          topic_link="/teacher"
           topic="แนะนำสำหรับครู"
           content={[
             {
@@ -27,7 +28,8 @@ export default function Home() {
             },
           ]}
         />
-        <SuggestCard
+        <RecommendCard
+        topic_link="/student"
           topic="แนะนำสำหรับนักเรียน"
           content={[
             {

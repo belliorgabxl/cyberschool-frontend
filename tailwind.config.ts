@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        prompt: ["var(--font-prompt)"],
+        prompt: ["Prompt", "sans-serif"],
       },
     },
   },

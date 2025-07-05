@@ -1,4 +1,5 @@
 "use client";
+import Headers from "@/components/common/Headers";
 import TopicCard from "@/components/common/TopicCard";
 import { TopicData } from "@/resource/TopicData";
 import React from "react";
@@ -10,11 +11,7 @@ export default function page() {
   return (
     <div className="py-10 px-10 bg-blue-100">
       <div className="w-full flex py-4 justify-center items-center">
-        <div className="px-10 text-center bg-white rounded-2xl py-10">
-          <h1 className="text-4xl text-blue-900 font-extrabold">
-            วิดิโอล่าสุดจำลองเหตุการณ์
-          </h1>
-        </div>
+        <Headers header="วิดิโอล่าสุดจำลองเหตุการณ์"/>
       </div>
       <div className="grid grid-cols-3 gap-4 py-5">
         {topics.map((d) => (
@@ -24,6 +21,7 @@ export default function page() {
             description={d.description}
             icon={d.icon}
             amount={d.amount}
+            link="/"
           />
         ))}
       </div>

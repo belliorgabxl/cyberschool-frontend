@@ -1,3 +1,4 @@
+import NotAvailableData from "@/components/common/ErrorBox/NotAvailableData";
 import Headers from "@/components/common/Headers";
 import React from "react";
 
@@ -6,6 +7,9 @@ export default function page() {
     <div className="py-5 px-10 bg-blue-100">
       <div className="w-full flex py-4 justify-center items-center">
         <Headers header="ความรู้สำหรับครูผู้สอน" />
+      </div>
+      <div className="grid py-10 place-items-center ">
+        <NotAvailableData />
       </div>
     </div>
   );

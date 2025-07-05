@@ -1,19 +1,20 @@
 "use client";
+import NotAvailableData from "@/components/common/ErrorBox/NotAvailableData";
 import Headers from "@/components/common/Headers";
-import TopicCard from "@/components/common/TopicCard";
-import { TopicData } from "@/resource/TopicData";
+// import TopicCard from "@/components/common/TopicCard";
+// import { TopicData } from "@/resource/TopicData";
 import React from "react";
 
-const data = TopicData;
+// const data = TopicData;
 
 export default function page() {
-  const topics = data;
+  // const topics = data;
   return (
     <div className="py-10 px-10 bg-blue-100">
       <div className="w-full flex py-4 justify-center items-center">
         <Headers header="ดาวโหลดน์แผนการสอน" />
       </div>
-      <div className="grid grid-cols-3 gap-4 py-5">
+      {/* <div className="grid grid-cols-3 gap-4 py-5">
         {topics.map((d) => (
           <TopicCard
             link="/"
@@ -24,6 +25,9 @@ export default function page() {
             amount={d.amount}
           />
         ))}
+      </div> */}
+      <div className="grid py-10 place-items-center ">
+        <NotAvailableData />
       </div>
     </div>
   );

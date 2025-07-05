@@ -36,13 +36,13 @@ export default function Home() {
               title: "วิดิโอล่าสุดจำลองเหตุการณ์",
               icon: <PlayIcon className="w-8 h-8 text-white" />,
               bg_icon: "bg-blue-800",
-              href: "/student/video-situation",
+              href: "/student",
             },
             {
               title: "เกมแบบฝึกหัดความปลอดภัย",
               icon: <Joystick className="w-8 h-8 text-white" />,
               bg_icon: "bg-blue-500",
-              href: "/student/game-practice",
+              href: "/student",
             },
           ]}
         />

@@ -1,8 +1,8 @@
 "use client";
 
-import { fetchAllStudentTopic, fetchAllTopic } from "@/api/topic/route";
+import { fetchAllStudentTopic } from "@/api/topic/route";
 import Headers from "@/components/common/Headers";
-import { StudentTopicReponse, TopicResponse } from "@/resource/dto";
+import { StudentTopicReponse} from "@/resource/dto";
 import React, { useEffect, useState } from "react";
 
 

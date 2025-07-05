@@ -17,7 +17,7 @@ export const fetchAllTeachTopic = async (): Promise<TeacherTopicReponse[]> =>{
         const res = await api.get<{data:TeacherTopicReponse[]}>("topic/teacher-topic")
         return res.data.data ?? [];
     }catch(err){
-        console.log("Fetch All Teacher Topic is Errors.")
+        console.log("Fetch All Teacher Topic is Errors.",err)
         return [];
     }
 }
@@ -28,7 +28,7 @@ export const fetchAllStudentTopic = async (): Promise<StudentTopicReponse[]> =>{
         const res = await api.get<{data:StudentTopicReponse[]}>("topic/student-topic")
         return res.data.data ?? [];
     }catch(err){
-        console.log("Fetch All Student Topic is Errors.")
+        console.log("Fetch All Student Topic is Errors.",err)
         return [];
     }
 }

@@ -18,35 +18,58 @@ interface Props {
 export default function StudentContentForm({ header, id, type }: Props) {
   const [contents, setContents] = useState<ContentResponse[]>([]);
   const [types, setTypes] = useState<"1" | "2">(type === "2" ? "2" : "1");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    fetchContentByTopicANDTypeID(id, types).then((items) => {
-      setContents(items);
-    });
+    const fetchData = async () => {
+      setIsLoading(true);
+      try {
+        const items = await fetchContentByTopicANDTypeID(id, types);
+        setContents(items);
+      } catch (err) {
+        console.error("Error fetching data:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
   }, [id, types]);
 
   return (
     <div className="w-[70%] pb-10 ">
-      <TopicHeader
-        icon={<ScrollIcon className="text-white w-10 h-10" />}
-        header={header}
-        second_header="ความรู้ที่นักเรียนควรรู้และระวัง"
-      />
-      {contents.length > 0 ? (
+      {isLoading!= true ? (
         <div>
-          <div className="my-4">
-            <ToggleButton onToggle={setTypes} />
-          </div>
-          {types === "1" ? (
-            <MotionContent contents={contents} />
+          {" "}
+          <TopicHeader
+            icon={<ScrollIcon className="text-white w-10 h-10" />}
+            header={header}
+            second_header="ความรู้ที่นักเรียนควรรู้และระวัง"
+          />
+          {contents.length > 0 ? (
+            <div>
+              <div className="my-4">
+                <ToggleButton onToggle={setTypes} />
+              </div>
+              {types === "1" ? (
+                <MotionContent contents={contents} />
+              ) : (
+                <VideoContent contents={contents} />
+              )}
+            </div>
           ) : (
-            <VideoContent contents={contents} />
+            <div className="grid place-items-center my-10 ">
+              {" "}
+              <NotFoundData />
+            </div>
           )}
         </div>
       ) : (
-        <div className="grid place-items-center my-10 "> <NotFoundData />
-            </div>
-       
+        <div className="grid place-items-center py-20">
+          <h1 className="text-7xl font-extrabold text-blue-900 animate-pulse">
+            Loading...
+          </h1>
+        </div>
       )}
     </div>
   );

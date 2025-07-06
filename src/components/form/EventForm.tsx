@@ -34,7 +34,7 @@ export default function EventForm() {
               description={items.description}
               icon={<IconComponent className="w-6 h-6" />}
               amount={1}
-              link="/"
+              link={"/student/" + "/" + items.title + "/" + items.id + "/" + "1"}
             />
           </div>
         );

@@ -38,9 +38,9 @@ export default function NewsCard() {
           <Link
             href={"/"}
             key={d.id}
-            className="bg-blue-100 py-10 px-5 hover:bg-white/30 duration-300  rounded-lg "
+            className="bg-white shadow-md border-gray-200 border py-10 px-5 hover:bg-blue-50 duration-300  rounded-lg "
           >
-            <h1 className="text-blue-900 text-xl font-bold mb-3" >{d.content}</h1>
+            <h1 className="bg-blue-900 text-white py-1 w-fit rounded-full px-4 text-xl font-prompt font-normal mb-3" >{d.content}</h1>
             <p className="text-base leading-relaxed text-gray-700 indent-8 mb-4">
              โรงเรียนบริหารธุรกิจจัดกิจกรรมวันวิทยาศาสตร์ ประจำปี 2568 เมื่อวันที่ 18 สิงหาคมที่ผ่านมา โดยมีกิจกรรมมากมายให้นักเรียนได้เข้าร่วม เช่น การประกวดโครงงานวิทยาศาสตร์ การแข่งขันตอบปัญหา และการจัดนิทรรศการจากชมรมวิทยาศาสตร์ของแต่ละระดับชั้น ซึ่งได้รับความสนใจจากนักเรียนและครูเป็นจำนวนมาก กิจกรรมนี้มีวัตถุประสงค์เพื่อส่งเสริมความคิดสร้างสรรค์ และกระตุ้นให้นักเรียนเห็นความสำคัญของวิทยาศาสตร์ในชีวิตประจำวัน...
             </p>

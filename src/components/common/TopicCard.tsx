@@ -14,7 +14,7 @@ export default function TopicCard({
   topic,
   description,
   icon,
-  amount,
+  // amount,
   link
 }: TopicCardProps) {
   return (

@@ -2,11 +2,13 @@ import BackButton from "@/components/common/BackButton";
 import StudentContentForm from "@/components/form/StudentContentForm";
 import React from "react";
 
-export default function Page({ params }: { params: { params: string[] } }) {
-  const encodedHeader = params.params[0];
-  const id = params.params[1];
-  const type = params.params[2];
+type PageParams = Promise<{ slug: string[] }>;
+
+export default  async function Page({ params }: { params: PageParams }) {
+   const { slug: paramArray } = await params;
+  const [encodedHeader, id, type] = paramArray;
   const header = decodeURIComponent(encodedHeader || "");
+
   return (
     <div
       className="py-5 px-10  "

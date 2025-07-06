@@ -22,7 +22,7 @@ export default function TopicCard({
       {icon && <span  className="px-2 rounded-full bg-blue-500 py-2 text-white">{icon}</span>}
         <h2 className="text-xl font-bold">{topic}</h2>
       <p className="text-base indent-8 text-gray-700 line-clamp-2">{description}</p>
-      <p className="text-base text-gray-700 py-1 border-1 border-gray-300 rounded-3xl px-4">{amount} ตัวอย่าง</p>
+      <p className="text-base text-gray-700 py-1 border-1 border-gray-300 rounded-3xl px-4">คลิกเพื่อดูตัวอย่าง</p>
     </Link>
   );
 }

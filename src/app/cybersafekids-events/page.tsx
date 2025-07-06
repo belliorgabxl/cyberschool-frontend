@@ -1,17 +1,22 @@
 import Headers from "@/components/common/Headers";
-import TopicCard from "@/components/common/TopicCard";
-import { TopicData } from "@/resource/TopicData";
+import EventForm from "@/components/form/EventForm";
 import React from "react";
 
 export default function page() {
-  const topics = TopicData;
-
   return (
-    <div className="py-4 px-10 bg-blue-100">
+    <div
+      className="py-4 px-10 bg-blue-100"
+      style={{
+        backgroundColor: "#dbeafe",
+        backgroundImage:
+          "linear-gradient(#d7d7d7 1px, transparent 1px), linear-gradient(90deg, #d7d7d7 1px, transparent 1px)",
+        backgroundSize: "20px 20px",
+      }}
+    >
       <div className="w-full flex py-2 justify-center items-center mb-4">
-        <Headers header="กิจกรรมการเรียนรู้"/>
+        <Headers header="กิจกรรมการเรียนรู้" />
       </div>
-      <div className="grid grid-cols-3 gap-4 mb-4">
+      {/* <div className="grid grid-cols-3 gap-4 mb-4">
         {topics.map((items) => (
           <div key={items.topic}>
             <TopicCard
@@ -23,7 +28,8 @@ export default function page() {
             />
           </div>
         ))}
-      </div>
+      </div> */}
+      <EventForm />
     </div>
   );
 }

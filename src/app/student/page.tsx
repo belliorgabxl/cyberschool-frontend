@@ -5,10 +5,18 @@ import React from "react";
 
 export default function Student() {
   return (
-    <div className="py-5 px-10 bg-blue-100 ">
+    <div
+      className="py-5 px-10  "
+      style={{
+        backgroundColor: "#dbeafe",
+        backgroundImage:
+          "linear-gradient(#d7d7d7 1px, transparent 1px), linear-gradient(90deg, #d7d7d7 1px, transparent 1px)",
+        backgroundSize: "20px 20px",
+      }}
+    >
       <div></div>
       <div className="w-full grid place-items-center mb-2">
-        <div className="w-[50%] py-4">
+        <div className="lg:w-[60%] py-2">
           <TopicHeader
             icon={<ScrollIcon className=" text-white w-10 h-10" />}
             header="สำหรับนักเรียน"

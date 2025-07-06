@@ -5,7 +5,15 @@ import { File, Joystick, PlayIcon, Puzzle } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="bg-blue-100 lg:px-10 pb-20">
+    <div
+      className="bg-blue-100 lg:px-10 pb-20"
+      style={{
+        backgroundColor: "#dbeafe",
+        backgroundImage:
+          "linear-gradient(#d7d7d7 1px, transparent 1px), linear-gradient(90deg, #d7d7d7 1px, transparent 1px)",
+        backgroundSize: "20px 20px",
+      }}
+    >
       <div className="py-5 ">
         <BannerHomePage />
       </div>
@@ -29,7 +37,7 @@ export default function Home() {
           ]}
         />
         <RecommendCard
-        topic_link="/student"
+          topic_link="/student"
           topic="แนะนำสำหรับนักเรียน"
           content={[
             {

@@ -1,7 +1,9 @@
 export type TopicResponse = {
   id: number;
-  file_type: "video" | "image" | "pdf";
-  file_url: string;
+  title: string;
+  role: string;
+  icon :string
+  description: string;
 };
 
 export type StudentTopicReponse = {
@@ -16,4 +18,12 @@ export type TeacherTopicReponse = {
   title: string;
   role: string;
   description: string;
+};
+
+export type ContentResponse = {
+  id: number;
+  title: string;
+  content_text: string;
+  content_description: string;
+  content_type: string;
 };

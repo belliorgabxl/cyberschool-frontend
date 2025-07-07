@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center  py-4  text-white">
-        <p>Cyber Safe Kids & Student Thailand | ©2024 </p>
+        <p>© 2025 Cyber Safe Kids & Student Thailand. All rights reserved.</p>
       </div>
     </div>
   );

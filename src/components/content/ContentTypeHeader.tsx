@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 
 interface Props {
@@ -7,10 +7,14 @@ interface Props {
   second_header: string;
 }
 
-export default function ContentTypeHeader({icon,header,second_header}:Props) {
+export default function ContentTypeHeader({
+  icon,
+  header,
+  second_header,
+}: Props) {
   return (
-    <div className="flex bg-white rounded-lg w-fit px-5 py-2 gap-2 justify-start items-center ">
-      <div className="rounded-full px-2 py-2 bg-gray-200">{icon}</div>
+    <div className="flex  rounded-lg w-fit px-5 py-2 gap-5 justify-start items-center ">
+      <div className="rounded-full px-3 py-3 bg-white">{icon}</div>
 
       <div className="grid ">
         <h1 className="text-2xl text-gray-700 text-start font-Prompt font-bold">

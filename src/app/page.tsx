@@ -1,7 +1,7 @@
 import BannerHomePage from "@/components/common/Banner";
 import NewsCard from "@/components/common/NewsCard";
 import RecommendCard from "@/components/common/SuggestCard";
-import { File, Joystick, PlayIcon, Puzzle } from "lucide-react";
+import { File, PlayIcon, Puzzle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -38,20 +38,20 @@ export default function Home() {
         />
         <RecommendCard
           topic_link="/student"
-          topic="แนะนำสำหรับนักเรียน"
+          topic="เนื้อหาสำหรับนักเรียน"
           content={[
             {
-              title: "วิดิโอล่าสุดจำลองเหตุการณ์",
+              title: "คลิกเข้าไปเพื่อรับชม",
               icon: <PlayIcon className="w-8 h-8 text-white" />,
               bg_icon: "bg-blue-800",
               href: "/student",
             },
-            {
-              title: "เกมแบบฝึกหัดความปลอดภัย",
-              icon: <Joystick className="w-8 h-8 text-white" />,
-              bg_icon: "bg-blue-500",
-              href: "/student",
-            },
+            // {
+            //   title: "เกมแบบฝึกหัดความปลอดภัย",
+            //   icon: <Joystick className="w-8 h-8 text-white" />,
+            //   bg_icon: "bg-blue-500",
+            //   href: "/student",
+            // },
           ]}
         />
       </div>

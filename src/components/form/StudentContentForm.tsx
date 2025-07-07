@@ -6,7 +6,7 @@ import { fetchContentByTopicANDTypeID } from "@/api/content/route";
 import { ContentResponse } from "@/resource/dto";
 import MotionContent from "../content/MotionContent";
 import VideoContent from "../content/VideoContent";
-import ToggleButton from "../common/ToggleButton";
+import ToggleButton from "../common/Button/ToggleTypeButton";
 import NotFoundData from "../common/ErrorBox/NotFoundData";
 
 interface Props {
@@ -36,7 +36,7 @@ export default function StudentContentForm({ header, id, type }: Props) {
         />
         {contents.length > 0 ? (
           <div>
-            <div className="my-4">
+            <div className="my-4  w-full">
               <ToggleButton onToggle={setTypes} />
             </div>
             {types === "1" ? (

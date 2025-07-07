@@ -1,11 +1,11 @@
-import BackButton from "@/components/common/BackButton";
+import BackButton from "@/components/common/Button/BackButton";
 import StudentContentForm from "@/components/form/StudentContentForm";
 import React from "react";
 
 type PageParams = Promise<{ slug: string[] }>;
 
-export default  async function Page({ params }: { params: PageParams }) {
-   const { slug: paramArray } = await params;
+export default async function Page({ params }: { params: PageParams }) {
+  const { slug: paramArray } = await params;
   const [encodedHeader, id, type] = paramArray;
   const header = decodeURIComponent(encodedHeader || "");
 

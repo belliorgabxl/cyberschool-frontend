@@ -1,5 +1,5 @@
 import api from "@/lib/apiCentralize";
-import { ContentResponse } from "@/resource/dto";
+import { ContentFileResponse, ContentResponse } from "@/resource/dto";
 
 export const fetchContentByTopicID = async (
   id: string
@@ -10,7 +10,7 @@ export const fetchContentByTopicID = async (
     );
     return response.data.data ?? [];
   } catch (err) {
-    console.error("Error fetching content by topic ID:", err);
+    console.log("Error fetching content by topic ID:", err);
     return [];
   }
 };
@@ -25,7 +25,21 @@ export const fetchContentByTopicANDTypeID = async (
     );
     return response.data.data ?? [];
   } catch (err) {
-    console.error("Error fetching content by topic & type :", err);
+    console.log("Error fetching content by topic & type :", err);
+    return [];
+  }
+};
+
+export const fetchFileByContentID = async (
+  id: string
+): Promise<ContentFileResponse[]> => {
+  try {
+    const response = await api.get<{ data: ContentFileResponse[] }>(
+      `file/${Number(id)}`
+    );
+    return response.data.data ?? [];
+  } catch (err) {
+    console.log("Error when fetch file by content  id : ", err);
     return [];
   }
 };

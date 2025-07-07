@@ -2,6 +2,7 @@ import { ContentResponse } from "@/resource/dto";
 import React from "react";
 import ContentTypeHeader from "./ContentTypeHeader";
 import { Play } from "lucide-react";
+import Link from "next/link";
 
 interface Props {
   contents: ContentResponse[];
@@ -20,7 +21,8 @@ export default function VideoContent({ contents }: Props) {
 
       <div className="grid gap-4 ">
         {contents.map((d) => (
-          <div
+          <Link
+          href={"/content/"+d.id+"/"+d.title}
             key={d.id}
             className="rounded-lg grid hover:scale-[102%] hover:bg-gray-100 duration-500  gap-2 bg-white px-5 py-5  "
           >
@@ -41,7 +43,7 @@ export default function VideoContent({ contents }: Props) {
                 3 file
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -2,7 +2,7 @@ export type TopicResponse = {
   id: number;
   title: string;
   role: string;
-  icon :string
+  icon: string;
   description: string;
 };
 
@@ -26,4 +26,12 @@ export type ContentResponse = {
   content_text: string;
   content_description: string;
   content_type: string;
+};
+
+export type FileType = "video" | "info" | "question" | "test";
+
+export type ContentFileResponse = {
+  id: number;
+  file_type: FileType;
+  file_url: string;
 };

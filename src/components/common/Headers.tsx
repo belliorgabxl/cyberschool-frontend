@@ -7,7 +7,7 @@ interface Props {
 
 export default function Headers({ header }: Props) {
   return (
-    <div className="px-10 text-center bg-white rounded-2xl py-5">
+    <div className="px-10 text-center bg-white rounded-2xl py-3">
       <h1 className="text-4xl text-blue-900 font-extrabold">{header}</h1>
     </div>
   );

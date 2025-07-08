@@ -5,17 +5,17 @@ import React, { useEffect, useState } from "react";
 import StudentTopicCard from "../common/StudentTopicCard";
 import NotFoundData from "../common/ErrorBox/NotFoundData";
 import {
-  BookOpen,
-  ShieldCheck,
-  LockKeyhole,
-  AlertTriangle,
+  CircleDollarSign,
+  VenusAndMars,
+  ShieldAlert,
+  BookKey,
 } from "lucide-react";
 
 const icons = [
-  <LockKeyhole key="lock" className="w-6 h-6 text-white" />,
-  <ShieldCheck key="sheid" className="w-6 h-6 text-white" />,
-  <BookOpen key="book" className="w-6 h-6 text-white" />,
-  <AlertTriangle key="triangle" className="w-6 h-6 text-white" />,
+  <CircleDollarSign key="lock" className="w-6 h-6 text-white" />,
+  <VenusAndMars key="sheid" className="w-6 h-6 text-white" />,
+  <ShieldAlert key="book" className="w-6 h-6 text-white" />,
+  <BookKey key="triangle" className="w-6 h-6 text-white" />,
 ];
 
 const themeConfigs = [

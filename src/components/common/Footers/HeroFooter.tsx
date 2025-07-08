@@ -1,7 +1,9 @@
 "use client";
 import { Lightbulb, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function HeroFooter() {
+  const router = useRouter()
   return (
     <section className="min-h-[350px] bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 flex items-center justify-center px-4 py-10">
       <div className="max-w-4xl mx-auto text-center text-white space-y-5">
@@ -20,7 +22,9 @@ export default function HeroFooter() {
         </p>
 
         <div className=" w-full grid place-items-center">
-          <button className="bg-white flex gap-4 justify-center items-center text-blue-700 hover:bg-blue-50 font-semibold px-8 py-3 text-lg hover:scale-105 rounded-full h-fit w-fit shadow-lg hover:shadow-xl transition-all duration-200">
+          <button className="bg-white flex gap-4 justify-center items-center text-blue-700 hover:bg-blue-50 font-semibold px-8 py-3 text-lg hover:scale-105 rounded-full h-fit w-fit shadow-lg hover:shadow-xl transition-all duration-200" onClick={()=>{
+            router.push("/student/")
+          }}>
             เริ่มกิจกรรมแรก
             <ArrowRight className="ml-2 w-5 h-5" />
           </button>

@@ -1,5 +1,6 @@
 "use client";
 
+import Headers from "@/components/common/Headers";
 import {
   Mail,
   MapPin,
@@ -7,6 +8,7 @@ import {
   Facebook,
   MessageCircleMore,
   Instagram,
+  PhoneCall,
 } from "lucide-react";
 import React from "react";
 
@@ -21,10 +23,11 @@ export default function ContactPage() {
         backgroundSize: "20px 20px",
       }}
     >
-      <div className="w-full flex justify-center mb-5">
-        <div className="bg-white px-8 py-3 rounded-2xl shadow text-blue-900 text-3xl font-bold">
-          ข้อมูลการติดต่อ
-        </div>
+      <div className="mb-4 grid place-items-center">
+        <Headers
+          header="ข้อมูลการติดต่อ"
+          icon={<PhoneCall className="w-8 h-8 text-blue-600" />}
+        />
       </div>
 
       {/* Contact Info */}

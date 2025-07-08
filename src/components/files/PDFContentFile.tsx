@@ -5,13 +5,14 @@ interface Props {
 
 export default function PDFContentFile({ url }: Props) {
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="px-10 py-2 text-lg bg-blue-500 hover:bg-blue-400 text-white  rounded-3xl"
-    >
-      เปิดเอกสารคำถาม
-    </a>
+    <div className="w-full h-[80vh]">
+      <iframe
+        src={url}
+        width="100%"
+        height="100%"
+        className="rounded-xl border"
+        title="PDF Viewer"
+      ></iframe>
+    </div>
   );
 }

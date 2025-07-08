@@ -16,6 +16,7 @@ const prompt = Prompt({
   variable: "--font-prompt",
   display: "swap",
 });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th" className={prompt.className}>
-      <body className="antialiased pt-20">
+      <body className="antialiased h-full  flex flex-col  pt-20 min-h-screen">
         <NavBar />
-        {children}
+         <main className="flex-grow">{children}</main>
         <Footer/>
       </body>
     </html>

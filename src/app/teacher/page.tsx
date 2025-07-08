@@ -4,7 +4,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="py-5 px-10 bg-blue-100">
+    <div className="py-5 px-10 bg-blue-100 h-full">
       <div className="w-full flex py-4 justify-center items-center">
         <Headers header="ความรู้สำหรับครูผู้สอน" />
       </div>

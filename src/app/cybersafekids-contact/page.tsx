@@ -13,7 +13,7 @@ import React from "react";
 export default function ContactPage() {
   return (
     <div
-      className="py-4 px-6 md:px-20 bg-blue-100 min-h-screen pb-20"
+      className="py-4 px-6 md:px-20 bg-blue-100 h-full pb-20"
       style={{
         backgroundColor: "#dbeafe",
         backgroundImage:

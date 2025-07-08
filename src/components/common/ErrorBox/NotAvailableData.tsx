@@ -3,7 +3,7 @@ import React from "react";
 
 export default function NotAvailableData() {
   return (
-    <div className=" border-4 w-[60%] mb-20 grid place-items-center gap-5 border-gray-400 rounded-lg border-dotted py-10">
+    <div className=" border-4 w-[60%]  grid place-items-center gap-5 border-gray-400 rounded-lg border-dotted py-10">
       <h1 className="text-3xl text-gray-500 font-Prompt font-semibold">
         ขออภัย
       </h1>

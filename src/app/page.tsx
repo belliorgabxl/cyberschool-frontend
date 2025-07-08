@@ -6,7 +6,7 @@ import { File, PlayIcon, Puzzle } from "lucide-react";
 export default function Home() {
   return (
     <div
-      className="bg-blue-100 lg:px-10 pb-20"
+      className="bg-blue-100 lg:px-10 pb-20 min-h-screen"
       style={{
         backgroundColor: "#dbeafe",
         backgroundImage:

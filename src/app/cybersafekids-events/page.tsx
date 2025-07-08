@@ -5,7 +5,7 @@ import React from "react";
 export default function page() {
   return (
     <div
-      className="py-4 px-10 bg-blue-100"
+      className="py-4 px-10 bg-blue-100 h-full"
       style={{
         backgroundColor: "#dbeafe",
         backgroundImage:

@@ -6,7 +6,7 @@ import React from "react";
 export default function Student() {
   return (
     <div
-      className="py-5 px-10  "
+      className="py-5 px-10  h-full"
       style={{
         backgroundColor: "#dbeafe",
         backgroundImage:

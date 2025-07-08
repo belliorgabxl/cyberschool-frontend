@@ -10,7 +10,7 @@ export default async function Content({ params }: { params: PageParams }) {
   const header = decodeURIComponent(encodedHeader || "");
   return (
     <div
-      className="py-4 px-10 bg-blue-100  pb-40"
+      className="py-4 px-10 bg-blue-100  h-full"
       style={{
         backgroundColor: "#dbeafe",
         backgroundImage:

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 import { Prompt } from "next/font/google";
-import Footer from "@/components/common/Footer";
+import Footer from "@/components/common/Footers/Footer";
 
 const prompt = Prompt({
   subsets: ["latin", "thai"],

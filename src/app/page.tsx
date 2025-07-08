@@ -1,16 +1,12 @@
 import BannerHomePage from "@/components/common/Banner";
 import HeroFooter from "@/components/common/Footers/HeroFooter";
-import NewsCard from "@/components/common/NewsCard";
 import RecommendCard from "@/components/common/RecommendCard";
 import StudentRecommendCard from "@/components/common/StudentRecommendCard";
 import {
-  Book,
   BookOpen,
   Download,
-  File,
   GraduationCap,
   PlayIcon,
-  Puzzle,
   Users,
 } from "lucide-react";
 

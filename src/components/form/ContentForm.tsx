@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchFileByContentID } from "@/api/content/route";
+import { fetchFileByContentID } from "@/api/files/route";
 import { ContentFileResponse, FileType } from "@/resource/dto";
 import React, { useEffect, useState } from "react";
 import ToggleFileButton from "../common/Button/ToggleFileButton";

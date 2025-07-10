@@ -13,11 +13,20 @@ export type StudentTopicReponse = {
   description: string;
 };
 
+export interface FileItem {
+  id: number;
+  file_name: string;
+  file_type: "info" | "video" | "question" | "test" | "others";
+  file_url: string;
+}
+
 export type TeacherTopicReponse = {
   id: number;
   title: string;
-  role: string;
-  description: string;
+  content_text: string;
+  content_description: string | null;
+  content_type: "short-video" | "others" | "video" | string;
+  files: FileItem[];
 };
 
 export type ContentResponse = {

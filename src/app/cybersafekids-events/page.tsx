@@ -1,6 +1,5 @@
 import HeroFooter from "@/components/common/Footers/HeroFooter";
 import Headers from "@/components/common/Headers";
-import EventForm from "@/components/form/EventForm";
 import StudentTopicForm from "@/components/form/StudentTopicForm";
 import { BookOpen } from "lucide-react";
 import React from "react";
@@ -17,9 +16,9 @@ export default function page() {
         </div>
       </div>
       <div className="px-10 pb-10">
-        <StudentTopicForm/>
+        <StudentTopicForm />
       </div>
-      
+
       <div className=" ">
         <HeroFooter />
       </div>

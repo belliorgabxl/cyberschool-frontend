@@ -1,3 +1,4 @@
+"use client";
 import {
   FileText,
   Download,
@@ -6,9 +7,12 @@ import {
   GraduationCap,
   Users,
   Mail,
+  ArrowLeft,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function DocumentCard() {
+  const router = useRouter();
   return (
     <div className="grid place-items-center lg:grid-cols-2  gap-5 w-full">
       <div className="w-full max-w-2xl mx-auto bg-blue-50 border-2 border-blue-200 rounded-lg">
@@ -85,13 +89,20 @@ export default function DocumentCard() {
           </div>
           {/* Action Buttons */}
           <div className="flex gap-3">
-            <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center">
+            <button
+              className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
+              onClick={() => {
+                router.push(
+                  "https://cyberschool.sgp1.cdn.digitaloceanspaces.com/Teacher/program/สื่อสนับสนุนครู คู่มือความปลอดภัยไซเบอร์.pdf"
+                );
+              }}
+            >
               <Download className="w-4 h-4 mr-2" />
               ดาวน์โหลด PDF
             </button>
             <button className="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center">
-              <Eye className="w-4 h-4 mr-2" />
-              ดูตัวอย่าง
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              กดเลย
             </button>
           </div>
         </div>
@@ -165,13 +176,20 @@ export default function DocumentCard() {
           </div>
           {/* Action Buttons */}
           <div className="flex gap-3">
-            <button className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center">
+            <button
+              className="flex-1 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center"
+              onClick={() => {
+                router.push(
+                  "https://cyberschool.sgp1.cdn.digitaloceanspaces.com/Teacher/program/สื่อสนับสนุนครู เว็บไซต์ ป้องกันภัย Cyber.pdf"
+                );
+              }}
+            >
               <Download className="w-4 h-4 mr-2" />
               ดาวน์โหลด PDF
             </button>
             <button className="bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 px-4 py-2 rounded-md font-medium transition-colors duration-200 flex items-center justify-center">
-              <Eye className="w-4 h-4 mr-2" />
-              ดูตัวอย่าง
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              กดเลย
             </button>
           </div>
         </div>

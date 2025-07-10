@@ -14,15 +14,7 @@ import React from "react";
 
 export default function ContactPage() {
   return (
-    <div
-      className="py-4 px-6 md:px-20 bg-blue-100 h-full pb-20"
-      style={{
-        backgroundColor: "#dbeafe",
-        backgroundImage:
-          "linear-gradient(#d7d7d7 1px, transparent 1px), linear-gradient(90deg, #d7d7d7 1px, transparent 1px)",
-        backgroundSize: "20px 20px",
-      }}
-    >
+    <div className="py-4 px-6 md:px-20 bg-[#f3f8ff] h-full pb-20">
       <div className="mb-4 grid place-items-center">
         <Headers
           header="ข้อมูลการติดต่อ"

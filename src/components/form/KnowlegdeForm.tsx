@@ -1,10 +1,12 @@
 "use client";
 
 import { Search } from "lucide-react";
-import React from "react";
+import React  from "react";
 import DocumentCard from "../common/DocumentCard";
 
-export default function EventForm() {
+export default function KnowlegdeForm() {
+
+
   return (
     <div className="grid  my-5 w-full">
       <div className="flex w-full items-center justify-center gap-5">
@@ -22,13 +24,12 @@ export default function EventForm() {
         <h1 className="text-2xl font-semibold font-prompt ">
           คู่มือและไดเรกทอรีแหล่งข้อมูล
         </h1>
-        <p className="text-lg text-gray-500">
-          รวบรวมข้อมูลครบถ้วนในรูปแบบ PDF ที่สะดวกต่อการดาวน์โหลดและใช้งาน
-        </p>
+        <p className="text-lg text-gray-500">รวบรวมข้อมูลครบถ้วนในรูปแบบ PDF ที่สะดวกต่อการดาวน์โหลดและใช้งาน</p>
       </div>
       <div className="my-4 px-10">
-        <DocumentCard />
+        <DocumentCard/>
       </div>
+      
     </div>
   );
 }

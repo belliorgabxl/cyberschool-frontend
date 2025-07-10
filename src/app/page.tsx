@@ -2,13 +2,7 @@ import BannerHomePage from "@/components/common/Banner";
 import HeroFooter from "@/components/common/Footers/HeroFooter";
 import RecommendCard from "@/components/common/RecommendCard";
 import StudentRecommendCard from "@/components/common/StudentRecommendCard";
-import {
-  BookOpen,
-  Download,
-  GraduationCap,
-  PlayIcon,
-  Users,
-} from "lucide-react";
+import { BookOpen, GraduationCap, PlayIcon, School, Star } from "lucide-react";
 
 export default function Home() {
   return (
@@ -32,18 +26,18 @@ export default function Home() {
             topic_icon={<GraduationCap className="h-8 w-8 text-white" />}
             content={[
               {
-                title: "ดาวน์โหลดแผนการสอน",
-                icon: <Download className="w-6 h-6 text-white" />,
+                title: "ความรู้สำหรับครูผู้สอน",
+                icon: <School className="w-6 h-6 text-white" />,
                 bg_icon: "bg-yellow-500",
                 border: "border-yellow-300",
-                href: "/teacher/schedule-plane",
+                href: "/teacher",
               },
               {
-                title: "กิจกรรมในห้องเรียน",
-                icon: <Users className="w-6 h-6 text-white" />,
+                title: "แนะนำโปรแกรมการเรียนรู้",
+                icon: <Star className="w-6 h-6 text-white" />,
                 bg_icon: "bg-green-500",
                 border: "border-green-300",
-                href: "/teacher/event-class",
+                href: "/suggest",
               },
             ]}
           />

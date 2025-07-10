@@ -13,7 +13,7 @@ export default function Page() {
           header="แนะนำโปรแกรมการเรียนรู้"
           icon={<CircleCheck className="w-8 h-8 text-blue-600" />}
         />
-        <p className="text-lg w-full text-center font-prompt text-gray-500">
+        <p className="text-lg my-4 w-full text-center font-prompt text-gray-500">
           ดาวน์โหลดคู่มือและไดเรกทอรีแหล่งข้อมูลด้านความปลอดภัยไซเบอร์
           จากหน่วยงานภาครัฐ สถาบันการศึกษา และองค์กรต่างๆ
         </p>

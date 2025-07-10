@@ -1,6 +1,6 @@
 "use client";
-import { fetchAllTopic } from "@/api/topic/route";
-import { TopicResponse } from "@/resource/dto";
+import { fetchAllStudentTopic, fetchAllTopic } from "@/api/topic/route";
+import { StudentTopicReponse, TopicResponse } from "@/resource/dto";
 import React, { useEffect, useState } from "react";
 import StudentTopicCard from "../common/StudentTopicCard";
 import NotFoundData from "../common/ErrorBox/NotFoundData";
@@ -50,10 +50,10 @@ const themeConfigs = [
 ];
 
 export default function StudentTopicForm() {
-  const [studentTopics, setStudentTopics] = useState<TopicResponse[]>([]);
+  const [studentTopics, setStudentTopics] = useState<StudentTopicReponse[]>([]);
 
   useEffect(() => {
-    fetchAllTopic().then((data: TopicResponse[]) => {
+    fetchAllStudentTopic().then((data: StudentTopicReponse[]) => {
       setStudentTopics(data);
     });
   }, []);

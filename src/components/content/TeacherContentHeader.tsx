@@ -7,14 +7,14 @@ interface Props {
   second_header: string;
 }
 
-export default function ContentTypeHeader({
+export default function TeacherContentHeader({
   icon,
   header,
   second_header,
 }: Props) {
   return (
-    <div className="flex   rounded-lg w-fit px-5 py-2 gap-5 justify-start items-center ">
-      <div className="rounded-full shadow-md shadow-gray-400 px-3 py-3 bg-white">{icon}</div>
+    <div className="flex bg-white shadow-md border-gray-2000 py-5 px-10  rounded-lg w-full gap-5 justify-start items-center ">
+      <div className="rounded-full px-3 py-3 bg-blue-200">{icon}</div>
 
       <div className="grid ">
         <h1 className="text-2xl text-gray-700 text-start font-Prompt font-bold">

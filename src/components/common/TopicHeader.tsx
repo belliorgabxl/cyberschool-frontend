@@ -8,7 +8,7 @@ interface Props {
 
 export default function TopicHeader({ icon, header, second_header }: Props) {
   return (
-    <div className="flex bg-white rounded-lg w-fit px-6 py-2 gap-5 justify-start items-center">
+    <div className="flex bg-white shadow-md rounded-lg w-fit px-6 py-2 gap-5 justify-start items-center">
       <div className="rounded-full px-2 py-2 bg-blue-600 shadow-md shadow-gray-400">{icon}</div>
 
       <div className="grid ">

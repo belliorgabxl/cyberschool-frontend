@@ -35,3 +35,12 @@ export type ContentFileResponse = {
   file_type: FileType;
   file_url: string;
 };
+
+export type TeacherKnowledgeResponse = {
+  id: number;
+  title: string;
+  content_text: string;
+  content_description: string | null;
+  content_type: string;
+  files: ContentFileResponse[];
+};

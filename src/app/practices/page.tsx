@@ -7,20 +7,16 @@ import React from "react";
 
 export default function Page() {
   return (
-    <div
-      className="py-4 px-10 bg-blue-100"
-      style={{
-        backgroundColor: "#dbeafe",
-        backgroundImage:
-          "linear-gradient(#d7d7d7 1px, transparent 1px), linear-gradient(90deg, #d7d7d7 1px, transparent 1px)",
-        backgroundSize: "20px 20px",
-      }}
-    >
-      <div className="w-full flex py-2 justify-center items-center">
+    <div className="py-4 px-10 bg-[#f3f8ff]">
+      <div className="w-full py-2 grid place-items-center gap-4">
         <Headers
           header="แนะนำโปรแกรมการเรียนรู้"
           icon={<CircleCheck className="w-8 h-8 text-blue-600" />}
         />
+        <p className="text-lg w-full text-center font-prompt text-gray-500">
+          ดาวน์โหลดคู่มือและไดเรกทอรีแหล่งข้อมูลด้านความปลอดภัยไซเบอร์
+          จากหน่วยงานภาครัฐ สถาบันการศึกษา และองค์กรต่างๆ
+        </p>
       </div>
       <EventForm />
     </div>

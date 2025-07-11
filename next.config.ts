@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     domains: [
-      "68.183.236.122", 
+      "188.166.177.147", 
       "cyberschool.sgp1.cdn.digitaloceanspaces.com", 
     ],
   },
@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "http://68.183.236.122:3000/api/:path*",
+        destination: "http://188.166.177.147:3001/api/:path*",
       },
     ];
   },
